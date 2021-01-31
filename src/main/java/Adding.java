@@ -1,7 +1,6 @@
 public class Adding implements Operations {
 
     private Double result;
-    private String message = "Brak możliwości wykonania obliczeń dla podanych typów wartości";
 
     public Adding() {
 
@@ -12,10 +11,9 @@ public class Adding implements Operations {
     }
 
     public Adding(String message) {
-        this.message = message;
     }
 
-
+    @Override
     public Adding data(double a, double b) {
         result = a + b;
         return new Adding(result);
@@ -46,6 +44,11 @@ public class Adding implements Operations {
 
     @Override
     public String toString() {
-        return "Wynik dodawania: " + result;
+        if (result != null) {
+            return "Wynik dodawania: " + result;
+        } else {
+            return "Wynik dodawania: " + message;
+        }
+
     }
 }
