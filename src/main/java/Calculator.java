@@ -21,16 +21,16 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
-
-        System.out.println("Wynik dzielenia: ");
+        operation = new Divide();
+        System.out.println(operation.data(a, b));
 
         //wykonaj potęgowanie
-        System.out.println("Wynik potęgowania: ");
-        //sprawdź, czy druga liczba jest większa od 0 i mniejsza od 128 i jeśli nie
-        // to jeśli jest mniejsza to przyjmij 0 a jeśli większa to 128
+        operation = new Exponentiation();
+        System.out.println(operation.data(a, b));
 
         //wykonaj pierwiastkowanie (2)
-        System.out.println("Wynik pierwiastkowania: ");
+        operation = new Square();
+        System.out.println(operation.data(a, b));
     }
 
     public void calculate(double a, double[] b) {
@@ -48,16 +48,16 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
-
-        System.out.println("Wynik dzielenia: ");
+        operation = new Divide();
+        System.out.println(operation.data(a, b));
 
         //wykonaj potęgowanie
-        System.out.println("Wynik potęgowania: ");
-        //sprawdź, czy druga liczba jest większa od 0 i mniejsza od 128 i jeśli nie
-        // to jeśli jest mniejsza to przyjmij 0 a jeśli większa to 128
+        operation = new Exponentiation();
+        System.out.println(operation.data(a, b));
 
         //wykonaj pierwiastkowanie (2)
-        System.out.println("Wynik pierwiastkowania: ");
+        operation = new Square();
+        System.out.println(operation.data(a, b));
     }
 
     public void calculate(double a, double[][] b) {
@@ -75,16 +75,16 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
-
-        System.out.println("Wynik dzielenia: ");
+        operation = new Divide();
+        System.out.println(operation.data(a, b));
 
         //wykonaj potęgowanie
-        System.out.println("Wynik potęgowania: ");
-        //sprawdź, czy druga liczba jest większa od 0 i mniejsza od 128 i jeśli nie
-        // to jeśli jest mniejsza to przyjmij 0 a jeśli większa to 128
+        operation = new Exponentiation();
+        System.out.println(operation.data(a, b));
 
         //wykonaj pierwiastkowanie (2)
-        System.out.println("Wynik pierwiastkowania: ");
+        operation = new Square();
+        System.out.println(operation.data(a, b));
     }
 
     public void calculate(double[] a, double[] b) {
@@ -102,16 +102,16 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
-
-        System.out.println("Wynik dzielenia: ");
+        operation = new Divide();
+        System.out.println(operation.data(a, b));
 
         //wykonaj potęgowanie
-        System.out.println("Wynik potęgowania: ");
-        //sprawdź, czy druga liczba jest większa od 0 i mniejsza od 128 i jeśli nie
-        // to jeśli jest mniejsza to przyjmij 0 a jeśli większa to 128
+        operation = new Exponentiation();
+        System.out.println(operation.data(a, b));
 
         //wykonaj pierwiastkowanie (2)
-        System.out.println("Wynik pierwiastkowania: ");
+        operation = new Square();
+        System.out.println(operation.data(a, b));
     }
 
     public void calculate(double[][] a, double[][] b) {
@@ -129,16 +129,16 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
-
-        System.out.println("Wynik dzielenia: ");
+        operation = new Divide();
+        System.out.println(operation.data(a, b));
 
         //wykonaj potęgowanie
-        System.out.println("Wynik potęgowania: ");
-        //sprawdź, czy druga liczba jest większa od 0 i mniejsza od 128 i jeśli nie
-        // to jeśli jest mniejsza to przyjmij 0 a jeśli większa to 128
+        operation = new Exponentiation();
+        System.out.println(operation.data(a, b));
 
         //wykonaj pierwiastkowanie (2)
-        System.out.println("Wynik pierwiastkowania: ");
+        operation = new Square();
+        System.out.println(operation.data(a, b));
     }
 
     public void calculate(double[][] a, double[] b) {
@@ -156,15 +156,15 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
-
-        System.out.println("Wynik dzielenia: ");
+        operation = new Divide();
+        System.out.println(operation.data(a, b));
 
         //wykonaj potęgowanie
-        System.out.println("Wynik potęgowania: ");
-        //sprawdź, czy druga liczba jest większa od 0 i mniejsza od 128 i jeśli nie
-        // to jeśli jest mniejsza to przyjmij 0 a jeśli większa to 128
+        operation = new Exponentiation();
+        System.out.println(operation.data(a, b));
 
         //wykonaj pierwiastkowanie (2)
-        System.out.println("Wynik pierwiastkowania: ");
+        operation = new Square();
+        System.out.println(operation.data(a, b));
     }
 }

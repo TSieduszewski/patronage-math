@@ -23,6 +23,6 @@ public class Main {
         double[][] h = {{7,8},
                         {9, 10}};
 
-        calc.calculate(e, f);
+        calc.calculate(7, 2);
     }
 }

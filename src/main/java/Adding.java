@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public class Adding implements Operations {
 
     private Result result;
