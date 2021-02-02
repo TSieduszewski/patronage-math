@@ -13,10 +13,12 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj odejmowanie
-        System.out.println("Wynik odejmowania: ");
+        operation = new Subtraction();
+        System.out.println(operation.data(a, b));
 
         //wykonaj mnożenie
-        System.out.println("Wynik mnożenia: ");
+        operation = new Multiplication();
+        System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
 
@@ -38,10 +40,12 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj odejmowanie
-        System.out.println("Wynik odejmowania: ");
+        operation = new Subtraction();
+        System.out.println(operation.data(a, b));
 
         //wykonaj mnożenie
-        System.out.println("Wynik mnożenia: ");
+        operation = new Multiplication();
+        System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
 
@@ -63,10 +67,12 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj odejmowanie
-        System.out.println("Wynik odejmowania: ");
+        operation = new Subtraction();
+        System.out.println(operation.data(a, b));
 
         //wykonaj mnożenie
-        System.out.println("Wynik mnożenia: ");
+        operation = new Multiplication();
+        System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
 
@@ -88,10 +94,12 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj odejmowanie
-        System.out.println("Wynik odejmowania: ");
+        operation = new Subtraction();
+        System.out.println(operation.data(a, b));
 
         //wykonaj mnożenie
-        System.out.println("Wynik mnożenia: ");
+        operation = new Multiplication();
+        System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
 
@@ -113,10 +121,12 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj odejmowanie
-        System.out.println("Wynik odejmowania: ");
+        operation = new Subtraction();
+        System.out.println(operation.data(a, b));
 
         //wykonaj mnożenie
-        System.out.println("Wynik mnożenia: ");
+        operation = new Multiplication();
+        System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
 
@@ -138,10 +148,12 @@ public class Calculator {
         System.out.println(operation.data(a, b));
 
         //wykonaj odejmowanie
-        System.out.println("Wynik odejmowania: ");
+        operation = new Subtraction();
+        System.out.println(operation.data(a, b));
 
         //wykonaj mnożenie
-        System.out.println("Wynik mnożenia: ");
+        operation = new Multiplication();
+        System.out.println(operation.data(a, b));
 
         //wykonaj dzielenie
 
