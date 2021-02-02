@@ -55,20 +55,47 @@ public class Multiplication implements Operations {
 
     public Multiplication data(double[][] a, double[][] b) {
 
+        if (a[0].length == b.length) {
+            try {
+                double[][] temp = new double[a.length][b[0].length];
+                for (int i = 0; i < a.length; i++) {
+                    for (int j = 0; j < b[0].length; j++) {
+                        for (int k = 0; k < b.length; k++) {
+                            temp[i][j] += a[i][k] * b[k][j];
+                        }
 
-//        double[][] temp = new double[a.length][a[0].length];
-//        for (int i = 0; i < a.length; i++) {
-//            for (int j = 0; j < a[i].length; j++) {
-//                temp[i][j] = a[i][j] - b[i][j];
-//            }
-//        }
-//        result.setMatrixResult(temp);
-        return new Multiplication(result);
+                    }
+                }
+                result.setMatrixResult(temp);
+                return new Multiplication(result);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                return new Multiplication("Macierze są nieprawidłowych rozmiarów");
+            }
+        } else {
+            return new Multiplication("Macierze są nieprawidłowych rozmiarów (liczba kolumn pierwszej nie równa się liczbie wierszy drugiej)");
+        }
+
     }
 
     @Override
     public Multiplication data(double[][] a, double[] b) {
-        return new Multiplication(message);
+        if (a.length == b.length) {
+            try {
+                double[] temp = new double[b.length];
+                for (int i = 0; i < b.length; i++) {
+                    for (int j = 0; j < a[0].length; j++) {
+                        temp[i] += a[i][j] * b[i];
+                    }
+                }
+                result.setVectorResult(temp);
+                return new Multiplication(result);
+
+            } catch (ArrayIndexOutOfBoundsException e) {
+                return new Multiplication("Macierze są nieprawidłowych rozmiarów");
+            }
+        } else {
+            return new Multiplication("Macierz lub wektor jest nieprawidłowych rozmiarów (liczba kolumn macierzy nie równa się liczbie argumentów wektora)");
+        }
     }
 
     @Override
