@@ -1,28 +1,35 @@
-import java.awt.desktop.AboutEvent;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
-        double q = 1;
-        double a = 2;
-        double[] b ={1,2};
-        double[] c ={1,2,6};
+        List<Values> allValues = new ArrayList<>();
+        Menu menu = new Menu();
+        System.out.println("Witaj w kalkulatorze matematycznym");
 
-        double[][] e = {{1,2,3},
-                        {4,5,6},
-                        {8,9,3}};
+        System.out.println("Operacje możliwe do wykonania to dodawanie, odejmowanie,\n" +
+                "odejmowanie, mnożenie, dzielenie, potęgowanie(tylko w zakresie 0-128), pierwiastkowanie (kwadratowe)\n" +
+                "liczb, wektorów i macierzy. Uwaga, nie każde działanie da się wykonać na podawanych typach danych.\n");
 
-        double[][] f = {{66,55,44},
-                        {34,34},
-                        {14,44444,43}};
 
-        double[][] g = {{1,2,3},
-                        {4,5,6}};
+            InsertedValues insertedValues = new InsertedValues();
+            for(int i=0;i<2;i++){
+                menu.options();
+                insertedValues.execute(menu.getOption(), i);
+                allValues.add(insertedValues.getExecutedData());
+                System.out.println("Druga wartość:");
+            }
 
-        double[][] h = {{7,8},
-                        {9, 10}};
+        Calculator c = new Calculator();
+        c.calculate(allValues.get(0), allValues.get(1));
+        System.out.println(allValues);
 
-        calc.calculate(7, 2);
+
     }
+
 }
+
+
+
+

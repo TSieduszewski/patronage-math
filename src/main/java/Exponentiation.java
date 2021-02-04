@@ -16,7 +16,7 @@ public class Exponentiation implements Operations {
     }
 
     @Override
-    public Object data(double a, double b) {
+    public Exponentiation data(double a, double b) {
 
         if (b<0 || b>128) {
             return new Exponentiation("Wykładnik potęgi nie mieści się w zakresie 0-128");
@@ -28,27 +28,27 @@ public class Exponentiation implements Operations {
     }
 
     @Override
-    public Object data(double a, double[] b) {
+    public Exponentiation data(double a, double[] b) {
         return new Exponentiation(message);
     }
 
     @Override
-    public Object data(double a, double[][] b) {
+    public Exponentiation data(double a, double[][] b) {
         return new Exponentiation(message);
     }
 
     @Override
-    public Object data(double[] a, double[] b) {
+    public Exponentiation data(double[] a, double[] b) {
         return new Exponentiation(message);
     }
 
     @Override
-    public Object data(double[][] a, double[][] b) {
+    public Exponentiation data(double[][] a, double[][] b) {
         return new Exponentiation(message);
     }
 
     @Override
-    public Object data(double[][] a, double[] b) {
+    public Exponentiation data(double[][] a, double[] b) {
         return new Exponentiation(message);
     }
 

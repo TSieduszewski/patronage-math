@@ -16,34 +16,34 @@ public class Square implements Operations {
     }
 
     @Override
-    public Object data(double a, double b) {
+    public Square data(double a, double b) {
         double[] temp = {Math.sqrt(a), Math.sqrt(b)};
         result.setVectorResult(temp);
-            return new Exponentiation(result);
+            return new Square(result);
     }
 
     @Override
-    public Object data(double a, double[] b) {
+    public Square data(double a, double[] b) {
         return new Square(message);
     }
 
     @Override
-    public Object data(double a, double[][] b) {
+    public Square data(double a, double[][] b) {
         return new Square(message);
     }
 
     @Override
-    public Object data(double[] a, double[] b) {
+    public Square data(double[] a, double[] b) {
         return new Square(message);
     }
 
     @Override
-    public Object data(double[][] a, double[][] b) {
+    public Square data(double[][] a, double[][] b) {
         return new Square(message);
     }
 
     @Override
-    public Object data(double[][] a, double[] b) {
+    public Square data(double[][] a, double[] b) {
         return new Square(message);
     }
 

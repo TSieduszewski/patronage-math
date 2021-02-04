@@ -16,7 +16,7 @@ public class Divide implements Operations {
     }
 
     @Override
-    public Object data(double a, double b) {
+    public Divide data(double a, double b) {
 
         Double temp = a / b;
         if (temp.isInfinite()) {
@@ -29,27 +29,27 @@ public class Divide implements Operations {
     }
 
     @Override
-    public Object data(double a, double[] b) {
+    public Divide data(double a, double[] b) {
         return new Divide(message);
     }
 
     @Override
-    public Object data(double a, double[][] b) {
+    public Divide data(double a, double[][] b) {
         return new Divide(message);
     }
 
     @Override
-    public Object data(double[] a, double[] b) {
+    public Divide data(double[] a, double[] b) {
         return new Divide(message);
     }
 
     @Override
-    public Object data(double[][] a, double[][] b) {
+    public Divide data(double[][] a, double[][] b) {
         return new Divide(message);
     }
 
     @Override
-    public Object data(double[][] a, double[] b) {
+    public Divide data(double[][] a, double[] b) {
         return new Divide(message);
     }
 
