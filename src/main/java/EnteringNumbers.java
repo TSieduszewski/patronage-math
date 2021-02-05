@@ -6,9 +6,6 @@ public class EnteringNumbers implements EnteringData {
     Double tempValue;
     Values insertedValue;
 
-    public EnteringNumbers() {
-    }
-
     @Override
     public void enterValue() {
         boolean isCorrect = false;

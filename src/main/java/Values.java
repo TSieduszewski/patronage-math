@@ -2,7 +2,7 @@ public class Values {
 
     Object value;
 
-    public Values(double a) {
+    public Values(Double a) {
         this.value = a;
 
     }
@@ -13,7 +13,7 @@ public class Values {
 
     }
 
-    public Values(double[][] c) {
+    public Values(Double[][] c) {
 
         this.value = c;
     }

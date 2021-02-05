@@ -18,12 +18,14 @@ public class Main {
                 menu.options();
                 insertedValues.execute(menu.getOption(), i);
                 allValues.add(insertedValues.getExecutedData());
-                System.out.println("Druga wartość:");
+               // System.out.println((Double[][])insertedValues.getExecutedData().getValue());
+                if(i==0){
+                    System.out.println("Druga wartość:");
+                }
             }
-
+        ;
         Calculator c = new Calculator();
         c.calculate(allValues.get(0), allValues.get(1));
-        System.out.println(allValues);
 
 
     }

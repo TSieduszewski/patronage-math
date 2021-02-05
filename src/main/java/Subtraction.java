@@ -16,23 +16,23 @@ public class Subtraction implements Operations {
     }
 
     @Override
-    public Subtraction data(double a, double b) {
+    public Subtraction data(Double a, Double b) {
         result.setNumberResult(a - b);
         return new Subtraction(result);
     }
 
     @Override
-    public Subtraction data(double a, double[] b) {
+    public Subtraction data(Double a, Double[] b) {
         return new Subtraction(message);
     }
 
     @Override
-    public Subtraction data(double a, double[][] b) {
+    public Subtraction data(Double a, Double[][] b) {
         return new Subtraction(message);
     }
 
-    public Subtraction data(double[] a, double[] b) {
-        double[] temp = new double[a.length];
+    public Subtraction data(Double[] a, Double[] b) {
+        Double[] temp = new Double[a.length];
 
         if (a.length != b.length) {
             return new Subtraction("Nie można odjąć wektorów, ponieważ są różnej długości");
@@ -45,9 +45,9 @@ public class Subtraction implements Operations {
         return new Subtraction(result);
     }
 
-    public Subtraction data(double[][] a, double[][] b) {
+    public Subtraction data(Double[][] a, Double[][] b) {
         try{
-            double[][] temp = new double[a.length][a[0].length];
+            Double[][] temp = new Double[a.length][a[0].length];
             for (int i = 0; i < a.length; i++) {
                 for (int j = 0; j < a[i].length; j++) {
                     temp[i][j] = a[i][j] - b[i][j];
@@ -62,7 +62,7 @@ public class Subtraction implements Operations {
     }
 
     @Override
-    public Subtraction data(double[][] a, double[] b) {
+    public Subtraction data(Double[][] a, Double[] b) {
         return new Subtraction(message);
     }
 

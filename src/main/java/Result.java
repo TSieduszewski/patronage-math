@@ -1,10 +1,11 @@
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class Result {
 
     private Double numberResult;
-    private double[] vectorResult;
-    private double[][] matrixResult;
+    private Double[] vectorResult;
+    private Double[][] matrixResult;
 
     public Double getNumberResult() {
         return numberResult;
@@ -14,19 +15,19 @@ public class Result {
         this.numberResult = numberResult;
     }
 
-    public double[] getVectorResult() {
+    public Double[] getVectorResult() {
         return vectorResult;
     }
 
-    public void setVectorResult(double[] vectorResult) {
+    public void setVectorResult(Double[] vectorResult) {
         this.vectorResult = vectorResult;
     }
 
-    public double[][] getMatrixResult() {
+    public Double[][] getMatrixResult() {
         return matrixResult;
     }
 
-    public void setMatrixResult(double[][] matrixResult) {
+    public void setMatrixResult(Double[][] matrixResult) {
         this.matrixResult = matrixResult;
     }
 

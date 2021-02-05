@@ -22,6 +22,14 @@ public class InsertedValues {
             }
             type.enterValue();
         }
+
+        if (selectedOption == 3) {
+            type = new EnteringMatrix();
+            if(i==0){
+                System.out.println(type.whatIsPossible());
+            }
+            type.enterValue();
+        }
     }
 
     public Values getExecutedData(){

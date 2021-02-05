@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Multiplication implements Operations {
 
     private Result result;
@@ -16,14 +18,14 @@ public class Multiplication implements Operations {
     }
 
     @Override
-    public Multiplication data(double a, double b) {
+    public Multiplication data(Double a, Double b) {
         result.setNumberResult(a * b);
         return new Multiplication(result);
     }
 
     @Override
-    public Multiplication data(double a, double[] b) {
-        double[] temp = new double[b.length];
+    public Multiplication data(Double a, Double[] b) {
+        Double[] temp = new Double[b.length];
         for (int i = 0; i < b.length; i++) {
             temp[i] = b[i] * a;
         }
@@ -32,9 +34,9 @@ public class Multiplication implements Operations {
     }
 
     @Override
-    public Multiplication data(double a, double[][] b) {
+    public Multiplication data(Double a, Double[][] b) {
 
-        double[][] temp = b;
+        Double[][] temp = b;
 
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b[i].length; j++) {
@@ -49,15 +51,15 @@ public class Multiplication implements Operations {
 
     }
 
-    public Multiplication data(double[] a, double[] b) {
+    public Multiplication data(Double[] a, Double[] b) {
         return new Multiplication(message);
     }
 
-    public Multiplication data(double[][] a, double[][] b) {
+    public Multiplication data(Double[][] a, Double[][] b) {
 
         if (a[0].length == b.length) {
             try {
-                double[][] temp = new double[a.length][b[0].length];
+                Double[][] temp = new Double[a.length][b[0].length];
                 for (int i = 0; i < a.length; i++) {
                     for (int j = 0; j < b[0].length; j++) {
                         for (int k = 0; k < b.length; k++) {
@@ -78,10 +80,11 @@ public class Multiplication implements Operations {
     }
 
     @Override
-    public Multiplication data(double[][] a, double[] b) {
+    public Multiplication data(Double[][] a, Double[] b) {
         if (a.length == b.length) {
             try {
-                double[] temp = new double[b.length];
+                Double[] temp = new Double[b.length];
+                Arrays.fill(temp,0.0);
                 for (int i = 0; i < b.length; i++) {
                     for (int j = 0; j < a[0].length; j++) {
                         temp[i] += a[i][j] * b[i];

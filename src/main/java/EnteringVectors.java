@@ -5,12 +5,13 @@ public class EnteringVectors implements EnteringData {
 
     Double[] tempValue;
     Values insertedValue;
+
     @Override
     public void enterValue() {
         boolean isCorrect = false;
         int vectorsLong = 0;
 
-        System.out.println("Podaj długość wektora (minimum 2 maksimum 4");
+        System.out.println("Podaj długość wektora (minimum 2 maksimum 4)");
         while (!isCorrect) {
             try {
                 Scanner scan = new Scanner(System.in);
@@ -29,10 +30,10 @@ public class EnteringVectors implements EnteringData {
         while (!isCorrect) {
             for (int i = 0; i < vectorsLong; i++) {
                 try {
-                        System.out.println("Wprowadź wartość nr. " + (i + 1));
-                        Scanner scan = new Scanner(System.in);
-                        double temp = scan.nextDouble();
-                        tempValue[i] = temp;
+                    System.out.println("Wprowadź wartość nr. " + (i + 1));
+                    Scanner scan = new Scanner(System.in);
+                    double temp = scan.nextDouble();
+                    tempValue[i] = temp;
 
                 } catch (InputMismatchException e) {
                     System.out.println("Nieprawidłowy format danych. Spróbuj jeszcze raz");
@@ -47,11 +48,11 @@ public class EnteringVectors implements EnteringData {
     @Override
     public String whatIsPossible() {
         return "Możliwe operacje do wykonania: Dodawanie, Odejmowanie, \n" +
-                "Pamiętaj, że dużo zależy od podania drugiej liczby(wektora lub macierzy) do obliczeń!\n" +
+                "Pamiętaj, że dużo zależy od podania drugiej liczby(liczby lub macierzy) do obliczeń!\n" +
                 "Część obliczeń może zostać niewykonanych ponieważ na danym zestawie nie będzie to możliwe.";
     }
 
-    public Values getEnteredValue(){
+    public Values getEnteredValue() {
         return insertedValue;
     }
 }
