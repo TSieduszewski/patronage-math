@@ -1,11 +1,14 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         List<Values> allValues = new ArrayList<>();
         Menu menu = new Menu();
+
         System.out.println("Witaj w kalkulatorze matematycznym");
 
         System.out.println("Operacje możliwe do wykonania to dodawanie, odejmowanie,\n" +

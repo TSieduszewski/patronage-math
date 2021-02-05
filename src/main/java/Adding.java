@@ -73,7 +73,7 @@ public class Adding implements Operations {
 
     @Override
     public String toString() {
-        DecimalFormat f = new DecimalFormat("0.00");
+
         if (result != null) {
             return "Wynik dodawania: " + result;
         } else {
